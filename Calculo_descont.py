@@ -18,7 +18,7 @@ if valor_total >= 2500:  # Condição de desconto, se o valor for inferior a 250
     else:
         percentual_desc = 11
     
-    valor_com_desc = valor_total - (valor_total * (percentual_desc / 100)) # Calculo de valor da compra com desconto aplicado.
+    valor_com_desc = valor_total - (valor_total * (percentual_desc / 100))  # Calculo de valor da compra com desconto aplicado.
 
     # Bloco de saída condicional 1 (caso haja descontos)
     print(f'\nValor SEM desconto: R${valor_total:.2f}\n')
