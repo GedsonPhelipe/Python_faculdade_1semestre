@@ -28,7 +28,7 @@ def consulta_livro(lista_livro):
             else:
                 print('\nOpção inválida, por favor tente novamente.')
         except ValueError:
-            print('Entrada inválida, por favor escolha uma opção númerica.\n')
+            print('Entrada inválida, por favor escolha uma opção numérica.\n')
 
     # Consulta todos.
     if consulta == 1:
