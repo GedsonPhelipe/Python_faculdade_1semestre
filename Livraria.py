@@ -9,8 +9,8 @@ def cadastrar_livro(id_global, lista_livro):
     autor = str(input('Digite o nome do autor: ')).strip().upper()
     editora = str(input('Digite o nome da editora: ')).strip().upper()
 
-    livro = {'Id': id_global, 'Nome': nome, 'Autor': autor, 'Editora': editora}  # Dicíonario local
-    lista_livro.append(livro)  # Copia dicíonario para lista príncipal.
+    livro = {'Id': id_global, 'Nome': nome, 'Autor': autor, 'Editora': editora}  # Dicionário local
+    lista_livro.append(livro)  # Copia dicionário para lista príncipal.
 
     print('Livro cadastrado com sucesso.')
     return id_global  # Retorna novo valor a Id global
