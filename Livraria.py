@@ -2,18 +2,18 @@
 def cadastrar_livro(id_global, lista_livro):
     print('\n MENU CADASTRAR LIVRO\n')
 
-    id_global += 1  # Gera número de Id.
+    id_global += 1  # Acrescenta 1 a id_global para referenciar novo livro.
 
     print(f'Id do livro: {id_global} ')
     nome = str(input('Digite o nome do livro: ')).strip().upper()
     autor = str(input('Digite o nome do autor: ')).strip().upper()
     editora = str(input('Digite o nome da editora: ')).strip().upper()
 
-    livro = {'Id': id_global, 'Nome': nome, 'Autor': autor, 'Editora': editora}  # Dicionário local
+    livro = {'Id': id_global, 'Nome': nome, 'Autor': autor, 'Editora': editora}  # Dicionário local.
     lista_livro.append(livro)  # Copia dicionário para lista príncipal.
 
     print('Livro cadastrado com sucesso.')
-    return id_global  # Retorna novo valor a Id global
+    return id_global  # Retorna novo valor a Id global.
 
 
 # Bloco contém lógica de consulta (Todos, Id ou autor).
@@ -121,7 +121,7 @@ def main():
                     print('Não há livros cadastrados até o momento.')
 
             else:
-                exit()  # Encerra Software
+                exit()  # Encerra Software.
 
         else:
             print('\nOpção inválida, por favor tente novamente.')
