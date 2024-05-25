@@ -58,16 +58,16 @@ def consulta_livro(lista_livro):
     # Consulta por autor.
     elif consulta == 3:
 
-        while True:
-            autor_procurado = str(input('\nDigite o nome do autor: ')).strip().upper()
+        autor_procurado = str(input('\nDigite o nome do autor: ')).strip().upper()
+        autor_encontrado = False
 
-            for livro in lista_livro:
-                if autor_procurado == livro['Autor']:
-                    print(f'\n Id: {livro['Id']}\n Nome: {livro['Nome']}\n Autor: {livro['Autor']}\n Editora: {livro['Editora']}')
-                    return
+        for livro in lista_livro:
+            if autor_procurado == livro['Autor']:
+                autor_encontrado = True
+                print(f'\n Id: {livro['Id']}\n Nome: {livro['Nome']}\n Autor: {livro['Autor']}\n Editora: {livro['Editora']}')
 
+        if not autor_encontrado:
             print('Autor não encontrado no banco de dados.')
-            break
 
 
 # Bloco contém lógica para remoção de livro (Busca livro por Id, caso encontrado remove do "banco de dados").
