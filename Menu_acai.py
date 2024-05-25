@@ -28,13 +28,13 @@ while resposta == 'S':
 
     # Bloco de escolha de tamanho.
     while True:
-        tamanho = str(input(f'Escolha o tamanho de seu {'Cupuaçu' if sabor == 'CP' else 'Açai'} P/M/G: ')).strip().upper()
+        tamanho = str(input(f'\nEscolha o tamanho de seu {"Cupuaçu" if sabor == "CP" else "Açai"} P/M/G: ')).strip().upper()
 
         # Verificação e Tratamento de erro 'tamanho'.
         if tamanho in ['P', 'M', 'G']:
             break
         else:
-            print('\nTamanho inválido. Por favor escolha entre P, M ou G.')  # Saída condicional 2.
+            print('Tamanho inválido. Por favor escolha entre P, M ou G.')  # Saída condicional 2.
             continue
 
     # Bloco com lógica de preços conforme tamanho.
